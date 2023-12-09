@@ -156,6 +156,10 @@ header .navbar ul li a:hover{
     padding:1rem 0;
 }
 
+#active {
+    color: #666;
+}
+
 .service{
     min-height: 100vh;
     background:#eee;
@@ -387,15 +391,6 @@ header .navbar ul li a:hover{
 .footer .credit a{
     color:var(--orange);
 }
-
-
-
-
-
-
-
-
-
 
 
 /* media queries  */
