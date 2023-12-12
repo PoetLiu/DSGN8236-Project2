@@ -163,7 +163,9 @@ header .navbar ul li a:hover {
     box-shadow: 3px 3px .3rem rgba(0, 0, 0, .3);
 }
 
-.flex-container .box:hover {
+.service .flex-container .box:hover,
+.plan .flex-container .box:hover
+ {
     cursor: pointer;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
