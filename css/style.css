@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
-:root {
-  --orange: #ff9814;
-}
-
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -12,12 +8,11 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
   transition: all 0.2s linear;
 }
 
 *::selection {
-  background: var(--orange);
+  background: #0576f7;
   color: #fff;
 }
 
@@ -26,15 +21,10 @@ html {
   overflow-x: hidden;
 }
 
-section {
-  padding: 0 7%;
-  padding-top: 12rem;
-}
-
 .btn {
   font-size: 2rem;
   padding: 0.7rem 3rem;
-  background: var(--orange);
+  background: #0576f7;
   color: #fff;
   margin-top: 1rem;
   cursor: pointer;
@@ -44,7 +34,7 @@ section {
   background: #333;
 }
 
-header {
+/* header {
   position: fixed;
   top: 0;
   left: 0;
@@ -52,13 +42,14 @@ header {
   background: #fff;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
   width: 100%;
+} */
+.logo-container {
+  display: flex;
+  justify-content: center;
 }
-
-header .heading {
-  font-size: 3rem;
-  color: #666;
-  padding: 1rem;
-  text-align: center;
+.logo {
+  height: 50px;
+  margin: 5px 0;
 }
 
 header #menu {
@@ -74,12 +65,14 @@ header .navbar ul {
   align-items: center;
   justify-content: center;
   list-style: none;
-  background: var(--orange);
-  padding: 1rem;
+  background: #0576f7;
+  padding: 2rem;
 }
 
 header .navbar ul li {
   margin: 0 1.5rem;
+  padding: 0 2rem;
+  text-transform: uppercase;
 }
 
 header .navbar ul li a {
@@ -88,14 +81,14 @@ header .navbar ul li a {
 }
 
 header .navbar ul li a:hover {
-  color: #444;
+  /* color: #444; */
+  font-weight: bolder;
 }
 
 .home {
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background: url(../images/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -111,19 +104,117 @@ header .navbar ul li a:hover {
   width: 100%;
 }
 
-.home .content {
-  flex: 1 1 40rem;
+.home .content h2 {
+  width: 50%;
 }
 
 .home .content h1 {
   font-size: 5rem;
   color: #444;
+  width: 50%;
 }
 
 .home .content p {
   font-size: 1.8rem;
   color: #666;
   padding: 1rem 0;
+  width: 50%;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.sqBox {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #6f78ee;
+  margin: 0 5px;
+}
+
+.features h1,
+.tools h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #0576f7;
+}
+
+.subheading {
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px 0;
+}
+
+.features-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0 20px;
+  width: 75%;
+  margin: 25px auto;
+}
+
+.features-overview-blocks h3 {
+  padding-top: 10px;
+  font-size: 2.25rem;
+}
+
+.features-overview p {
+  font-size: 1.5rem;
+  line-height: 25px;
+  padding-top: 10px;
+}
+.features-overview-icons {
+  display: flex;
+  font-size: 5rem;
+  color: #ccc;
+  background-color: #0576f7;
+  text-align: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.features-overview-btn-container,
+.tools-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.features-overview-btn,
+.tools-btn {
+  margin: 20px 0;
+  padding: 15px 30px;
+  font-size: 2rem;
+  border: 3px solid #0576f7;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #0576f7;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.features-overview-btn:hover,
+.tools-btn:hover {
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #0576f7;
+}
+
+.tools-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* gap: 0 20px; */
+  width: 75%;
+  margin: 25px auto;
+}
+.tools-img img {
+  width: 225px;
 }
 
 .service {
@@ -151,7 +242,7 @@ header .navbar ul li a:hover {
 .service .box-container .box i {
   font-size: 4rem;
   padding: 1rem;
-  color: var(--orange);
+  color: #0576f7;
 }
 
 .service .box-container .box h3 {
@@ -237,7 +328,7 @@ header .navbar ul li a:hover {
 }
 
 .footer .credit a {
-  color: var(--orange);
+  color: #0576f7;
 }
 
 /* media queries  */
@@ -306,7 +397,7 @@ header .navbar ul li a:hover {
   }
 
   header .navbar ul li a:hover {
-    color: var(--orange);
+    color: #0576f7;
   }
 
   .fa-times {

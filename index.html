@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
+    <title>Home</title>
 
     <!-- font awesome cdn link  -->
     <link
@@ -21,17 +21,23 @@
     <!-- header section starts  -->
 
     <header>
-      <h1 class="heading">home</h1>
+      <div class="logo-container">
+        <img
+          src="./images/QuantumScape Innovations-logos_transparent.png"
+          alt="logo Image"
+          class="logo"
+        />
+      </div>
 
       <div id="menu" class="fas fa-bars"></div>
 
       <nav class="navbar">
         <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="service.html">service</a></li>
-          <li><a href="plan.html">plan</a></li>
-          <li><a href="contact.html">contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="plan.html">Plan</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -41,18 +47,18 @@
     <!-- home section starts   -->
 
     <section class="home">
-      <div class="content">
-        <h1>creative landing pages</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, vero
-          repellendus! Accusantium doloremque placeat eaque eligendi quaerat?
-          Cupiditate, quae corrupti?
-        </p>
-        <a href="#"><button class="btn">get started</button></a>
+      <div class="image">
+        <img src="images/landingImg.png" alt="Hero Image" />
       </div>
 
-      <div class="image">
-        <img src="images/landingImg.png" alt="" />
+      <div class="content">
+        <h2>Information Technology Solutions</h2>
+        <h1>Challenge Us With Innovative Ideas</h1>
+        <p>
+          We are experts in taking challenging ideas and converting them into a
+          success story.
+        </p>
+        <a href="#"><button class="btn">Explore More</button></a>
       </div>
     </section>
 
@@ -70,14 +76,21 @@
       </p>
 
       <div class="features-overview">
-        <div>
+        <div class="features-overview-blocks">
+          <div class="features-overview-icons">
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
           <h3>Complete Admin Panel</h3>
           <p>
             It is a premium admin user interface based on tailwind where there
             is a set of basic components like register, login,signup.
           </p>
         </div>
-        <div>
+        <div class="features-overview-blocks">
+          <div class="features-overview-icons">
+            <i class="fa-solid fa-users"></i>
+          </div>
+
           <h3>User & Role Management</h3>
           <p>
             User flow and role management is a path taken by a prototypical user
@@ -86,7 +99,11 @@
             a final action.
           </p>
         </div>
-        <div>
+        <div class="features-overview-blocks">
+          <div class="features-overview-icons">
+            <i class="fa-solid fa-cubes-stacked"></i>
+          </div>
+
           <h3>Module Management</h3>
           <p>
             QuantumScape Innovations has included the modules like sliders,
@@ -94,7 +111,11 @@
             develop your own module.
           </p>
         </div>
-        <div>
+        <div class="features-overview-blocks">
+          <div class="features-overview-icons">
+            <i class="fa-solid fa-photo-film"></i>
+          </div>
+
           <h3>Media Management</h3>
           <p>
             QuantumScape Innovations helps to manage the media app like sliders,
@@ -103,17 +124,34 @@
           </p>
         </div>
       </div>
-      <div><button>See All Features</button></div>
+      <div class="features-overview-btn-container">
+        <button class="features-overview-btn">See All Features</button>
+      </div>
     </section>
+
+    <div class="divider">
+      <span class="sqBox"></span>
+      <span class="sqBox"></span>
+      <span class="sqBox"></span>
+    </div>
 
     <section class="tools">
       <h1>Trusted Tools</h1>
-      <p>
-        Developers Community loves the technology we used. Mass of developer
+      <p class="subheading">
+        Developers community loves the technology we used. Mass of developer
         working behind web application prefer QuantumScape Innovations.
       </p>
-      <div class="tools-img"></div>
-      <div><button>Learn More</button></div>
+      <div class="tools-img">
+        <img src="./images/760E9897F5DC16A-mongo-underline.png" alt="MongoDB" />
+        <img src="./images/BD38AF50DA29899-express.png" alt="Express" />
+        <img src="/images/B3B082EC53EEA0A-reactjs.png" alt="ReactJS" />
+        <img src="/images/769B74E8C2E3282-nodejs.png" alt="NodeJS" />
+        <img src="/images/EA9B40692C91530-redux.png" alt="Redux" />
+        <img src="/images/08FC5F40F4824FF-webpack.png" alt="Webpack" />
+      </div>
+      <div class="tools-btn-container">
+        <button class="tools-btn">Learn More</button>
+      </div>
     </section>
 
     <!-- home section ends -->
