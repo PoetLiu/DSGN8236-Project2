@@ -34,15 +34,6 @@ html {
   background: #333;
 }
 
-/* header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  background: #fff;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
-  width: 100%;
-} */
 .logo-container {
   display: flex;
   justify-content: center;
@@ -89,7 +80,7 @@ header .navbar ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../images/home-bg.jpg) no-repeat;
+  background: url(../images/home-bg.jpg) no-repeat; /* https://gracethemes.com/wp-content/uploads/2023/02/design.png.webp */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -209,12 +200,11 @@ header .navbar ul li a:hover {
 .tools-img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  /* gap: 0 20px; */
   width: 75%;
   margin: 25px auto;
 }
 .tools-img img {
-  width: 225px;
+  width: 12vw;
 }
 
 .plan {
@@ -224,7 +214,6 @@ header .navbar ul li a:hover {
   background-position: center;
   background-attachment: fixed;
   border-top: 2px solid #1259f3;
-  /* background: #eee; */
 }
 .plan > h1 {
   padding: 20px;
@@ -304,7 +293,7 @@ header .navbar ul li a:hover {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   align-items: center;
-  width: 1270px;
+  width: 75%;
   margin: 20px auto;
   padding: 20px 30px;
 }
@@ -495,33 +484,9 @@ header .navbar ul li a:hover {
   color: #0576f7;
 }
 
-/* media queries  */
-
-/* @media (max-width: 768px) {
-  html {
-    font-size: 55%;
-  }
-
-  .home .content {
-    text-align: center;
-  }
-
-  .home .content h1 {
-    font-size: 4rem;
-  }
-
-  .about .content h1 {
-    font-size: 4rem;
-  }
-} */
-
 /* media queries for mobile devices */
 
 @media only screen and (max-width: 768px) {
-  /* html {
-    font-size: 50%;
-  } */
-
   .home {
     display: block;
   }
@@ -670,14 +635,12 @@ header .navbar ul li a:hover {
   .tools-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* width: 75%; */
-    /* margin: 25px auto; */
     align-content: space-between;
     justify-content: space-around;
   }
 
   .tools-img img {
-    /* width: 175px; */
+    width: 32vw;
     justify-self: center;
   }
 
