@@ -73,6 +73,14 @@ header .navbar ul li a:hover {
     font-weight: bolder;
 }
 
+header #menu {
+    font-size: 3rem;
+    color: #666;
+    cursor: pointer;
+    margin: 1rem;
+    display: none;
+}
+
 .logo-container {
     display: flex;
     justify-content: center;
@@ -267,15 +275,59 @@ footer .copyright a {
         font-size: 55%;
     }
 
-    .home .content {
-        text-align: center;
-    }
-
-    .home .content h1 {
-        font-size: 4rem;
-    }
-
     .about .content h1 {
         font-size: 4rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    header #menu {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: 6.2rem;
+        right: -120%;
+        height: 100%;
+        width: 100%;
+        border-top: 0.2rem solid rgba(0, 0, 0, 0.3);
+    }
+
+    header .navbar ul {
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+        background: #fff;
+        padding-bottom: 15rem;
+    }
+
+    header .navbar ul li {
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    header .navbar ul li a {
+        font-size: 2.5rem;
+        color: #333;
+        display: block;
+    }
+
+    header .navbar ul li a:hover {
+        color: #0576f7;
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    header .navbar.nav-toggle {
+        right: 0;
     }
 }
