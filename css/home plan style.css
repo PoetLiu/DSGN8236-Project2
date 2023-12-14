@@ -21,6 +21,10 @@ html {
   overflow-x: hidden;
 }
 
+#active {
+  color: black;
+}
+
 .btn {
   font-size: 2rem;
   padding: 0.7rem 3rem;
