@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 0 7%;
+    padding-top: 12rem;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: .7rem 3rem;
+    font-size: 2rem;
+    background: #FF9814;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+    width: 100%;
+}
+
+header .heading {
+    font-size: 3rem;
+    color: #666;
+    padding: 1rem;
+    text-align: center;
+}
+
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: #FF9814;
+    padding: 1rem;
+}
+
+header .navbar ul li {
+    margin: 0 1.5rem;
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: #fff;
+}
+
+header .navbar ul li a:hover {
+    color: #444;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    background: url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .image {
+    flex: 1 1 40rem;
+}
+
+.home .image img {
+    width: 100%;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+}
+
+.home .content h1 {
+    font-size: 5rem;
+    color: #444;
+}
+
+.home .content p {
+    font-size: 1.8rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    min-height: 100vh;
+}
+
+.about .image {
+    flex: 1 1 40rem;
+}
+
+.about .image img {
+    width: 100%;
+}
+
+.about .content {
+    flex: 1 1 40rem;
+}
+
+.about .content h1 {
+    font-size: 5rem;
+    color: #444;
+}
+
+.about .content p {
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+#active {
+    color: #666;
+}
+
+.service {
+    min-height: 100vh;
+    background: #eee;
+}
+
+.service .flex-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.service .flex-container .box {
+    margin: 2rem;
+    padding: 1rem;
+    width: 30rem;
+    text-align: center;
+    background: #fff;
+    box-shadow: 3px 3px .3rem rgba(0, 0, 0, .3);
+}
+
+.service .flex-container .box:hover,
+.plan .flex-container .box:hover
+ {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service .flex-container .box i {
+    padding: 1rem;
+    font-size: 4rem;
+    color: #FF9814;
+}
+
+.service .flex-container .box h3 {
+    font-size: 2rem;
+    color: #444;
+}
+
+.service .flex-container .box p {
+    font-size: 1.3rem;
+    color: #666;
+    padding: 1rem;
+}
+
+.plan {
+    min-height: 100vh;
+    background: #eee;
+}
+
+.plan .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.plan .flex-container .box {
+    margin: 1rem;
+    padding: 2rem;
+    width: 35rem;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+.plan .flex-container .box .title {
+    font-size: 3rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.plan .flex-container .box .price {
+    background: #FF9814;
+    color: #fff;
+    border-radius: 50%;
+    margin: 1rem auto;
+    height: 13rem;
+    width: 13rem;
+    line-height: 13rem;
+    text-align: center;
+    font-size: 2.9rem;
+}
+
+.plan .flex-container .box .price span {
+    font-size: 2rem;
+}
+
+.plan .flex-container .box ul li {
+    color: #666;
+    list-style: none;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.contact form {
+    flex: 1 1 40rem;
+    padding: 2rem;
+    margin: 1rem;
+    margin-top: 4rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
+}
+
+.contact .content {
+    flex: 1 1 40rem;
+    padding: 3rem 1rem;
+}
+
+.contact form .box {
+    color: #333;
+    width: 100%;
+    height: 4rem;
+    font-size: 1.7rem;
+    border-bottom: .2rem solid rgba(0, 0, 0, .3);
+    margin: 1rem 0;
+}
+
+.contact form .box::placeholder {
+    text-transform: capitalize;
+}
+
+.contact form .box:focus {
+    border-color: #FF9814;
+}
+
+.contact form .message {
+    height: 15rem;
+}
+
+.contact .content h3 {
+    font-size: 4rem;
+    color: #444;
+}
+
+.contact .content p {
+    font-size: 1.8rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.contact .content .icons {
+    font-size: 1.7rem;
+    color: #333;
+    padding: .7rem 0;
+}
+
+.contact .content .icons i {
+    padding-right: .5rem;
+    color: #FF9814;
+}
+
+footer {
+    background: #333;
+}
+
+footer .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .flex-container .box {
+    margin: 2rem;
+    flex: 1 1 30rem;
+}
+
+footer .flex-container .box h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+footer .flex-container .box p {
+    font-size: 1.4rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+footer .flex-container .box a {
+    font-size: 1.8rem;
+    color: #eee;
+    padding: .4rem 0;
+    display: block;
+}
+
+footer .flex-container .box a:hover {
+    text-decoration: underline;
+}
+
+footer .flex-container .box:nth-child(2) {
+    text-align: center;
+}
+
+footer .flex-container form {
+    display: flex;
+    align-items: center;
+}
+
+footer .flex-container form input[type="email"] {
+    height: 4.1rem;
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 0 1rem;
+}
+
+footer .flex-container form .btn {
+    margin-top: 0;
+}
+
+footer .flex-container form .btn:hover {
+    color: #333;
+    background: #ccc;
+}
+
+footer .copyright {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    background: #222;
+    padding: 2rem 1rem;
+}
+
+footer .copyright a {
+    color: #FF9814;
+}
+
+
+/* mobile view */
+
+@media (max-width:768px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .home .content {
+        text-align: center;
+    }
+
+    .home .content h1 {
+        font-size: 4rem;
+    }
+
+    .about .content h1 {
+        font-size: 4rem;
+    }
+}
