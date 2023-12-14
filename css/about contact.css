@@ -7,7 +7,6 @@
     box-sizing: border-box;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -24,7 +23,7 @@ section {
     margin-top: 1rem;
     padding: .7rem 3rem;
     font-size: 2rem;
-    background: #FF9814;
+    background: #0576f7;
     color: #fff;
 }
 
@@ -54,12 +53,14 @@ header .navbar ul {
     align-items: center;
     justify-content: center;
     list-style: none;
-    background: #FF9814;
-    padding: 1rem;
+    background: #0576f7;
+    padding: 2rem;
 }
 
 header .navbar ul li {
     margin: 0 1.5rem;
+    padding: 0 2rem;
+    text-transform: uppercase;
 }
 
 header .navbar ul li a {
@@ -68,41 +69,18 @@ header .navbar ul li a {
 }
 
 header .navbar ul li a:hover {
-    color: #444;
+    /* color: #444; */
+    font-weight: bolder;
 }
 
-.home {
+.logo-container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    min-height: 100vh;
-    background: url(../images/home-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    justify-content: center;
 }
 
-.home .image {
-    flex: 1 1 40rem;
-}
-
-.home .image img {
-    width: 100%;
-}
-
-.home .content {
-    flex: 1 1 40rem;
-}
-
-.home .content h1 {
-    font-size: 5rem;
-    color: #444;
-}
-
-.home .content p {
-    font-size: 1.8rem;
-    color: #666;
-    padding: 1rem 0;
+.logo {
+    height: 50px;
+    margin: 5px 0;
 }
 
 .about {
@@ -141,105 +119,6 @@ header .navbar ul li a:hover {
     color: #666;
 }
 
-.service {
-    min-height: 100vh;
-    background: #eee;
-}
-
-.service .flex-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-}
-
-.service .flex-container .box {
-    margin: 2rem;
-    padding: 1rem;
-    width: 30rem;
-    text-align: center;
-    background: #fff;
-    box-shadow: 3px 3px .3rem rgba(0, 0, 0, .3);
-}
-
-.service .flex-container .box:hover,
-.plan .flex-container .box:hover
- {
-    cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.service .flex-container .box i {
-    padding: 1rem;
-    font-size: 4rem;
-    color: #FF9814;
-}
-
-.service .flex-container .box h3 {
-    font-size: 2rem;
-    color: #444;
-}
-
-.service .flex-container .box p {
-    font-size: 1.3rem;
-    color: #666;
-    padding: 1rem;
-}
-
-.plan {
-    min-height: 100vh;
-    background: #eee;
-}
-
-.plan .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
-}
-
-.plan .flex-container .box {
-    margin: 1rem;
-    padding: 2rem;
-    width: 35rem;
-    text-align: center;
-    background: #fff;
-    box-shadow: 0 0 .3rem rgba(0, 0, 0, .3);
-    position: relative;
-}
-
-.plan .flex-container .box .title {
-    font-size: 3rem;
-    color: #666;
-    padding: 1rem 0;
-}
-
-.plan .flex-container .box .price {
-    background: #FF9814;
-    color: #fff;
-    border-radius: 50%;
-    margin: 1rem auto;
-    height: 13rem;
-    width: 13rem;
-    line-height: 13rem;
-    text-align: center;
-    font-size: 2.9rem;
-}
-
-.plan .flex-container .box .price span {
-    font-size: 2rem;
-}
-
-.plan .flex-container .box ul li {
-    color: #666;
-    list-style: none;
-    font-size: 1.7rem;
-    padding: 1rem 0;
-}
-
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -275,7 +154,7 @@ header .navbar ul li a:hover {
 }
 
 .contact form .box:focus {
-    border-color: #FF9814;
+    border-color: #0576f7;
 }
 
 .contact form .message {
@@ -301,7 +180,7 @@ header .navbar ul li a:hover {
 
 .contact .content .icons i {
     padding-right: .5rem;
-    color: #FF9814;
+    color: #0576f7;
 }
 
 footer {
@@ -376,7 +255,7 @@ footer .copyright {
 }
 
 footer .copyright a {
-    color: #FF9814;
+    color: #0576f7;
 }
 
 
