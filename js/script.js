@@ -11,3 +11,20 @@ $(document).ready(function(){
     });
 
 });
+
+function SendMessage () {
+   $("#contactForm")[0].reset();
+   Swal.fire({
+          icon: 'success',
+          title: 'Message sent!',
+          text: 'Thank you for reaching out to us.',
+          showConfirmButton: false,
+          timer: 2000,
+          customClass: {
+            popup: 'sweetalert-custom-popup',
+            title: 'sweetalert-custom-title',
+            content: 'sweetalert-custom-content',
+          }
+        });
+}
+  

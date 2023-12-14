@@ -4,18 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Rehatpreet Singh" />
   <title>contact</title>
 
-  <!-- font awesome cdn link  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
-  <!-- custom css file link  -->
   <link rel="stylesheet" href="css/about contact.css" />
 </head>
 
 <body>
-  <!-- header section starts  -->
-
   <header>
     <div class="logo-container">
       <img src="./images/QuantumScape Innovations-logos_transparent.png" alt="logo Image" class="logo" />
@@ -34,22 +31,18 @@
     </nav>
   </header>
 
-  <!-- header section ends -->
-
-  <!-- contact section starts  -->
-
   <section class="contact">
-    <form action="">
+    <form action="" id="contactForm">
       <input type="text" class="box" placeholder="name" />
       <input type="email" class="box" placeholder="your email" />
       <input type="password" class="box" placeholder="your password" />
       <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
 
-      <input type="submit" class="btn" value="send message" />
+      <input type="button" class="btn" value="Send message" onclick="SendMessage()"/>
     </form>
 
     <div class="content">
-      <h3>contact us for latest updates</h3>
+      <h3>Contact us for latest updates</h3>
       <p>Stay informed with our latest innovations. Your journey to cutting-edge solutions begins here!</p>
       <div class="icons">
         <i class="fas fa-map-marker-alt"></i> Waterloo, Canada.
@@ -65,8 +58,6 @@
 
   </section>
 
-  <!-- contact section ends -->
-
   <footer>
     <div class="flex-container">
       <div class="box">
@@ -78,16 +69,16 @@
       </div>
 
       <div class="box">
-        <h3>quick links</h3>
-        <a href="index.html">home</a>
-        <a href="about.html">about</a>
-        <a href="service.html">service</a>
-        <a href="plan.html">plan</a>
-        <a href="contact.html">contact</a>
+        <h3>Quick links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="plan.html">Plan</a>
+        <a href="contact.html">Contact</a>
       </div>
 
       <div class="box">
-        <h3>newsletter</h3>
+        <h3>Newsletter</h3>
         <p>subscribe us for latest updates</p>
         <form action="">
           <input type="email" placeholder="your email" />
@@ -106,6 +97,7 @@
 
   <!-- custom js file link  -->
   <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>
